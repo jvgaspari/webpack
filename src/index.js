@@ -34,3 +34,7 @@ console.log(frase);
 // Import arquivo json
 const pessoa = texto;
 console.log(pessoa);
+
+// Import constantes globais
+console.log('Versão: ', VERSION);
+console.log('Porta: ', PORT);
