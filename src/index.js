@@ -38,3 +38,6 @@ console.log(pessoa);
 // Import constantes globais
 console.log('Versão: ', VERSION);
 console.log('Porta: ', PORT);
+
+// Import dotenv
+console.log('env', process.env.API_KEY);
