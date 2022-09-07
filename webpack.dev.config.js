@@ -13,6 +13,15 @@ module.exports = {
         path: path.resolve(__dirname, 'dist')
     },
     mode: 'development',
+    devServer: {
+        proxy: { // proxy URLs to backend development server
+            '/api': 'http://localhost:8000'
+          },
+        static: path.resolve(__dirname, './dist'),
+        historyApiFallback: {
+            index: 'index.html'
+        }
+    },
     optimization: {
         minimize: true,
         minimizer: [new TerserPlugin()]
